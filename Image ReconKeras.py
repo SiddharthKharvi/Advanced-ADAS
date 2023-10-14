@@ -7,7 +7,7 @@ print(os.getcwd())
 np.set_printoptions(suppress=True)
 model = load_model("keras_Model.h5", compile=False)
 class_names = open("labels.txt", "r").readlines()
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(0)123
 
 while True:
     ret, image = camera.read()
